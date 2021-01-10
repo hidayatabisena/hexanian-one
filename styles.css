@@ -13,10 +13,21 @@
 ---- CUSTOM CSS PROPERTIES
 */
 :root {
-    --primary-color: #2647f3;
+    --primary-color: #26092a;
 }
 
 /*
 ---- NAVBAR
 */
 
+.navbar {
+    background: var(--primary-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
