@@ -1,0 +1,22 @@
+/*
+---- RESET ALL CSS
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*
+---- CUSTOM CSS PROPERTIES
+*/
+:root {
+    --primary-color: #2647f3;
+}
+
+/*
+---- NAVBAR
+*/
+
