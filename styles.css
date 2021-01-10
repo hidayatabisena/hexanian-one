@@ -15,6 +15,8 @@
 :root {
     --primary-color:#383537;
     --yellow-brand: #f1c40f;
+    --rangoon-green: #191618;
+    --broken-white: #fff;
 }
 
 /*
@@ -70,7 +72,7 @@
 }
 
 .navbar__links {
-    color: #fff;
+    color: var(--broken-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +109,7 @@
     background: #f12711;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #fff;
+    color: var(--broken-white);
     transition: all 0.3s ease;
 }
 
@@ -162,7 +164,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: var(--broken-white);
     }
 
     .navbar__item {
@@ -212,4 +214,56 @@
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+/*
+---- HERO SECTION
+*/
+.hero {
+    background: var(--rangoon-green);
+    background: linear-gradient(to right, var(--primary-color), var(--rangoon-green));
+    padding: 200px 0;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero__heading {
+    font-size: 100px;
+    margin-bottom: 24px;
+    color: var(--broken-white);
+}
+
+.hero__heading span {
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.hero__description {
+    background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.highlight {
+    border-bottom: 4px solid rgb(132,0,255);
 }
