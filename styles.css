@@ -14,6 +14,7 @@
 */
 :root {
     --primary-color:#383537;
+    --yellow-brand: #f1c40f;
 }
 
 /*
@@ -45,11 +46,11 @@
 
 #navbar__logo {
     background-color: #2647f3;
-    background-image: linear-gradient(to top, var(--primary-color) 0%, #f1c40f 100%);
+    background-image: linear-gradient(to top, var(--primary-color) 0%, var(--yellow-brand) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color:#f1c40f;
+    -webkit-text-fill-color: var(--yellow-brand);
     -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
@@ -69,11 +70,42 @@
 }
 
 .navbar__links {
-    color: white;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 125px;
     text-decoration: none;
     height: 100%;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+/*
+---- FOR Gradient color, use this websites: 
+---- https://uigradients.com/#Flare
+*/
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    transition: all 0.3s ease;
 }
